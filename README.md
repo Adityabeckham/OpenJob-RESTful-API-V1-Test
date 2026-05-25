@@ -4,30 +4,30 @@ OpenJob API adalah project submission kelas Belajar Fundamental Back-end dengan 
 
 ## 🚀 Fitur Utama
 
-- *Autentikasi & Otorisasi*: Login, refresh token, dan proteksi route menggunakan JWT.
-- *Manajemen Pengguna*: Registrasi dan pembaruan profil pengguna.
-- *Perusahaan*: Pengelolaan data perusahaan.
-- *Lowongan Pekerjaan (Jobs)*: Posting, update, pencarian, dan filter lowongan kerja berdasarkan kategori atau perusahaan.
-- *Lamaran Kerja (Applications)*: Proses melamar pekerjaan dan pelacakan status lamaran.
-- *Bookmark*: Menyimpan lowongan pekerjaan favorit.
-- *Dokumen*: Unggah dan kelola dokumen pendukung seperti CV/Resume.
-- *Validasi Data*: Menggunakan Joi untuk memastikan integritas data input.
-- *Error Handling*: Penanganan error yang tersentralisasi untuk respon API yang konsisten.
+- **Autentikasi & Otorisasi**: Login, refresh token, dan proteksi route menggunakan JWT.
+- **Manajemen Pengguna**: Registrasi dan pembaruan profil pengguna.
+- **Perusahaan**: Pengelolaan data perusahaan.
+- **Lowongan Pekerjaan (Jobs)**: Posting, update, pencarian, dan filter lowongan kerja berdasarkan kategori atau perusahaan.
+- **Lamaran Kerja (Applications)**: Proses melamar pekerjaan dan pelacakan status lamaran.
+- **Bookmark**: Menyimpan lowongan pekerjaan favorit.
+- **Dokumen**: Unggah dan kelola dokumen pendukung seperti CV/Resume.
+- **Validasi Data**: Menggunakan Joi untuk memastikan integritas data input.
+- **Error Handling**: Penanganan error yang tersentralisasi untuk respon API yang konsisten.
 
 ## 🛠️ Tech Stack
 
-- *Runtime*: Node.js
-- *Framework*: Express.js
-- *Database*: PostgreSQL
-- *Migration*: node-pg-migrate
-- *Validation*: Joi
-- *Security*: bcrypt (hashing), jsonwebtoken (JWT)
-- *File Upload*: Multer
-- *ID Generation*: Nanoid
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: PostgreSQL
+- **Migration**: node-pg-migrate
+- **Validation**: Joi
+- **Security**: bcrypt (hashing), jsonwebtoken (JWT)
+- **File Upload**: Multer
+- **ID Generation**: Nanoid
 
 ## 📂 Struktur Proyek
 
-text
+```text
 .
 ├── migrations/           # File migrasi database
 ├── src/
@@ -42,7 +42,7 @@ text
 ├── uploads/              # Folder penyimpanan file upload
 ├── package.json          # Dependensi dan script proyek
 └── database.json         # Konfigurasi migrasi
-
+```
 
 ## ⚙️ Persiapan Lingkungan (Setup)
 
@@ -55,15 +55,15 @@ text
 
 Clone repositori ini dan instal dependensi:
 
-bash
+```bash
 npm install
-
+```
 
 ### 3. Konfigurasi Database
 
-Buat database di PostgreSQL, kemudian buat file .env di root direktori dan sesuaikan konfigurasinya:
+Buat database di PostgreSQL, kemudian buat file `.env` di root direktori dan sesuaikan konfigurasinya:
 
-env
+```env
 # Server Configuration
 HOST=localhost
 PORT=3000
@@ -78,51 +78,54 @@ PGPORT=5432
 # JWT Configuration
 ACCESS_TOKEN_KEY=string_rahasia_akses_token
 REFRESH_TOKEN_KEY=string_rahasia_refresh_token
-
+```
 
 ### 4. Menjalankan Migrasi
 
 Jalankan perintah berikut untuk membuat tabel di database:
 
-bash
+```bash
 npm run migrate up
-
+```
 
 ## 🏃 Menjalankan Aplikasi
 
-- *Mode Pengembangan (Development)*:
-  bash
-  npm run start:dev
-  
-- *Mode Produksi (Production)*:
-  bash
-  npm run start
-  
+- **Mode Pengembangan (Development)**:
 
-Server akan berjalan di http://localhost:3000 (atau sesuai konfigurasi PORT di .env).
+```bash
+npm run start:dev
+```
+
+- **Mode Produksi (Production)**:
+
+```bash
+npm run start
+```
+
+Server akan berjalan di `http://localhost:3000` (atau sesuai konfigurasi `PORT` di `.env`).
 
 ## 📡 API Endpoints (Ringkasan)
 
-| Method | Endpoint           | Deskripsi                 | Akses   |
-| :----- | :----------------- | :------------------------ | :------ |
-| POST   | /users           | Registrasi user baru      | Public  |
-| POST   | /authentications | Login (Mendapatkan Token) | Public  |
-| PUT    | /authentications | Refresh Access Token      | Public  |
-| GET    | /jobs            | List semua lowongan kerja | Public  |
-| POST   | /jobs            | Membuat lowongan baru     | Private |
-| POST   | /applications    | Melamar pekerjaan         | Private |
-| GET    | /profile         | Mendapatkan profil user   | Private |
-| POST   | /documents       | Unggah CV/Resume          | Private |
+| Method | Endpoint | Deskripsi | Akses |
+| :----- | :------- | :--------- | :---- |
+| POST | `/users` | Registrasi user baru | Public |
+| POST | `/authentications` | Login (Mendapatkan Token) | Public |
+| PUT | `/authentications` | Refresh Access Token | Public |
+| GET | `/jobs` | List semua lowongan kerja | Public |
+| POST | `/jobs` | Membuat lowongan baru | Private |
+| POST | `/applications` | Melamar pekerjaan | Private |
+| GET | `/profile` | Mendapatkan profil user | Private |
+| POST | `/documents` | Unggah CV/Resume | Private |
 
 Detail lengkap endpoint dapat dilihat pada file Postman Collection yang disertakan.
 
 ## 🧪 Pengujian
 
-Tersedia folder *postman environment & collection* dan environment-nya untuk memudahkan pengujian API menggunakan Postman.
+Tersedia folder **postman environment & collection** dan environment-nya untuk memudahkan pengujian API menggunakan Postman.
 
 ## 📊 Database Schema
 
-Skema database (ERD) dapat dilihat pada file ERD-OpenJob-versi-1.png yang terdapat di root direktori.
+Skema database (ERD) dapat dilihat pada file `ERD-OpenJob-versi-1.png` yang terdapat di root direktori.
 
 ---
 
