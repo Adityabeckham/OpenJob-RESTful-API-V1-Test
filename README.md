@@ -1,6 +1,6 @@
 # OpenJob RESTful API V1
 
-OpenJob API adalah platform backend untuk sistem rekrutmen pekerjaan yang dibangun menggunakan Node.js, Express, dan PostgreSQL. API ini menyediakan berbagai fitur mulai dari manajemen pengguna, lowongan pekerjaan, hingga proses lamaran kerja.
+OpenJob API adalah project submission kelas Belajar Fundamental Back-end dengan Javascript, Project backend untuk sistem rekrutmen pekerjaan yang dibangun menggunakan Node.js, Express, dan PostgreSQL. API ini menyediakan berbagai fitur mulai dari manajemen pengguna, lowongan pekerjaan, hingga proses lamaran kerja.
 
 ## 🚀 Fitur Utama
 
