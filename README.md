@@ -129,4 +129,7 @@ Skema database (ERD) dapat dilihat pada file `ERD-OpenJob-versi-1.png` yang terd
 
 ---
 
-Submission Project 1 Kelas Belajar Fundamentak Back-end dengan JavaScript.
+
+## 📖 Lisensi
+Proyek ini dibuat untuk keperluan edukasi pada platform **Dicoding Academy** - Belajar Fundamental Back-End dengan JavaScript. Silakan digunakan sebagai referensi belajar! 🎓
+
