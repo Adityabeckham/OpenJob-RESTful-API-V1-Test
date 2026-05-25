@@ -118,7 +118,7 @@ Detail lengkap endpoint dapat dilihat pada file Postman Collection yang disertak
 
 ## 🧪 Pengujian
 
-Tersedia file *OpenJob API Test V1.postman_collection.json* dan environment-nya untuk memudahkan pengujian API menggunakan Postman.
+Tersedia folder *postman environment & collection* dan environment-nya untuk memudahkan pengujian API menggunakan Postman.
 
 ## 📊 Database Schema
 
